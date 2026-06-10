@@ -9,9 +9,6 @@ class cycle{
             slow = slow.next;
             if(fast.next!=null)
                 fast = fast.next.next;
-            else{
-                fast = fast.next;
-            }
             if(slow==fast){
                 return true;
             }
