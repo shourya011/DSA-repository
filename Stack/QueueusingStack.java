@@ -1,5 +1,4 @@
 class QueueusingStack{
-    class MyQueue {
     Stack<Integer> s;
     Stack<Integer> temp;
     public MyQueue() {
@@ -46,4 +45,3 @@ class QueueusingStack{
  * int param_3 = obj.peek();
  * boolean param_4 = obj.empty();
  */
-}

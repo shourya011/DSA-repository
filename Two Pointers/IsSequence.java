@@ -1,3 +1,4 @@
+class isSubsequence{
 public boolean isSubsequence(String s, String t) {
         boolean found = false;
         int index = 0;
@@ -17,3 +18,4 @@ public boolean isSubsequence(String s, String t) {
         }
     return true;
     }
+}
