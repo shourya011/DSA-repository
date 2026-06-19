@@ -12,9 +12,6 @@ class MyLinkedList {
             next = null;
         }
     }
-    public MyLinkedList() {
-    }
-    
     public int get(int index) {
         if(index<0 || index>=length){
             return -1;
