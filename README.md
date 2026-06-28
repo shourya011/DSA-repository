@@ -36,6 +36,7 @@ This repository contains my solutions to Data Structures and Algorithms problems
 ```text
 DSA/
 ├── Arrays/
+├── Algorithms/
 ├── Two Pointers/
 ├── Strings/
 ├── HashMap/
