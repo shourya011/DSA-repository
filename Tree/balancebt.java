@@ -26,7 +26,7 @@ class balancebt{
 
     //0(N)
     public boolean isBalanced(TreeNode root) {
-        return maxheight(root) != -1;
+        return maxheight(root) != -1;   // here -1 represent that it is not a balanced binary tree
     }
     public int maxheight(TreeNode root){
         if(root==null){
