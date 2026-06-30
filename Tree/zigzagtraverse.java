@@ -39,3 +39,52 @@ class Solution {
     }
 }
 }
+
+
+2 stack method
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        Stack<TreeNode> s1 = new Stack<>();
+        Stack<TreeNode> s2 = new Stack<>();
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        if(root==null) return list;
+        s1.push(root);
+        while(!s1.isEmpty() || !s2.isEmpty()){
+            List<Integer> t1 = new ArrayList<>();
+            List<Integer> t2 = new ArrayList<>();
+            while(!s1.isEmpty()){
+                TreeNode n = s1.pop();
+                t1.add(n.val);
+                if(n.left!=null) s2.push(n.left);
+                if(n.right!=null) s2.push(n.right);
+            }
+            while(!s2.isEmpty()){
+                TreeNode n = s2.pop();
+                t2.add(n.val);
+                if(n.right!=null) s1.push(n.right);
+                if(n.left!=null) s1.push(n.left);
+            }
+            if(!t1.isEmpty())
+                list.add(t1);
+            if(!t2.isEmpty())
+                list.add(t2);
+        }
+        return list;
+    }
+}
