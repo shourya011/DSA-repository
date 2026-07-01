@@ -37,7 +37,7 @@
 7.  *Invert Binary Tree*
    **Recursive Tree Modification** – Swap left and right children at every node.
 	   1. store root.left
-	   2.   root.left = recursive(root.left)
+	   2.   root.left = recursive(root.right)
 	   3. root.right = recursive(step 1)
 	4. return root   
 		
