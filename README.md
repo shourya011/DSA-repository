@@ -11,6 +11,7 @@ This repository contains my solutions to Data Structures and Algorithms problems
 * Linked List
 * Stack
 * Queue
+* Heap
 * Trees
 * Graphs
 * Dynamic Programming
@@ -41,6 +42,7 @@ DSA/
 ├── Strings/
 ├── HashMap/
 ├── LinkedList/
+├── Heap/
 ├── Stack/
 ├── Queue/
 ├── Trees/
