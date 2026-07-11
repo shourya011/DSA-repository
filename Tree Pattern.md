@@ -52,7 +52,7 @@
 10. *PathSum*
     **Root-to-Leaf DFS** – Carry the remaining/accumulated sum while traversing down.
     
-11.* Symmetric Tree*
+11. * Symmetric Tree*
 	 **Mirror DFS** – Compare left and right subtrees in mirrored order.
 	 Note:- 
 	 base cond;- r1 && r2 true
@@ -61,12 +61,12 @@
 	 compare n1.left to n2.right;
 	 compare n1.right to n2.left
 	 
-12.* RightSideView*
+12. * RightSideView*
     **Level Order + Last Node** – Process each level and keep the last visible node.
 	    hint:- 
 	    `if(lvl==i){ list.add(q.peek().val) }`
 	    
-13.. *LowestCommonAncestor bst*
+13. *LowestCommonAncestor bst*
     **Recursive Divide & Conquer** – Search both subtrees and return the node where paths split.
 	```
 	if(root.data<n1.data && root.data<n2.data){
@@ -115,7 +115,7 @@
 				or
 		lvl order and count%2=0 + reverse
 				
-21.* binarytreepath*
+21. * binarytreepath*
 	**Backtracking DFS** – Maintain the current path and record it upon reaching leaves.
 	Note:- check notes or github for this cuz it's important
 
@@ -147,7 +147,7 @@
 		}
 		```
 		
-26.*Search In a BST*
+26. *Search In a BST*
 	 **BST Search** – Use the BST property to move left or right based on the target value until the node is found or becomes `null`.
 		Code:- ```
 			if(root.val=val) return root
@@ -174,7 +174,7 @@
 		dfs(root.right, target);
 		path.remove(path.size() - 1);   // Backtrack
 				
-26. BSTInsertation
+26. *BSTInsertation*
 	**Recursive BST Insertion** – Compare the value with the current node, move left or right using the BST property, and insert when a `null` position is reached.
 		code:- 
 		```if(root == null)
