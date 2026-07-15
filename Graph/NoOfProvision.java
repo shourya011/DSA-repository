@@ -1,13 +1,11 @@
-//no of connected components
-
 class Solution {
-    int countConnected(int V, ArrayList<ArrayList<Integer>> edges) {
+    int countConnected(int[][] isConnected) {
         // code here
 
         //converting edges to adjacency matrix
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
 
-        for (int i = 0; i < V; i++) {                           
+        for (int i = 0; i < isConnected.length; i++) {                           
             adj.add(new ArrayList<>());
         }
                                                                 //[
@@ -17,12 +15,12 @@ class Solution {
                                                                     // []    // node 3
                                                                 //]
 
-        for (ArrayList<Integer> edge : edges) {
-            int u = edge.get(0);
-            int v = edge.get(1);
-
-            adj.get(u).add(v);
-            adj.get(v).add(u);   // because the graph is undirected
+        for(int i=0;i<isConnected.length;i++){
+	        for(int j=0;j<isConnected[0].length;j++){
+		        if(isConnected[i][j]==1 && i!=j){
+			        adj.get(i).add(j);
+		        }
+	        }
         }
 
         //end

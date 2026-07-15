@@ -10,10 +10,22 @@ class Solution {
         }
         return findGCD(evenSum,oddSum);
     }
+
+    //recursive
     public static int findGCD(int a, int b) {
         if (b == 0) {
             return a;
         }
         return findGCD(b, a % b);
+    }
+
+    //iterative
+    public static int findGCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
     }
 }
