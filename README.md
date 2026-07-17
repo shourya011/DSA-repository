@@ -15,6 +15,7 @@ This repository contains my solutions to Data Structures and Algorithms problems
 * Trees
 * Graphs
 * Dynamic Programming
+* Math
 
 ## Problem Sources
 
@@ -40,6 +41,7 @@ DSA/
 ├── Algorithms/
 ├── Two Pointers/
 ├── Strings/
+├── Math/
 ├── HashMap/
 ├── LinkedList/
 ├── Heap/
