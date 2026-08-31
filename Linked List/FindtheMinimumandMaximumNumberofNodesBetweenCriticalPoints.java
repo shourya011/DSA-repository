@@ -27,7 +27,6 @@ class Solution {
         if(set.size()<2){
             return arr;
         }
-        Collections.sort(set);
         int max = set.get(set.size()-1) - set.get(0);
         int min = Integer.MAX_VALUE;
         for(int i=1;i<set.size();i++){
